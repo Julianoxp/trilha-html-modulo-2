@@ -1,5 +1,7 @@
 html, body {
     margin: 0;
+    padding: 0;
+    font-family: Arial, 'sans-serif';
 }
 body {
     background-color: #f1f1f1;
@@ -15,22 +17,55 @@ body {
 }
 .main {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     width: 85%;
+    
 }
 .menu {
     width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+    background-color: #E1E1E1;
+    padding: 10px 20px 0px 0px;
+}
+.menu ul{
+    margin-top: 50px;
+    margin-left: -35px;
+}
+.menu li{
+    list-style: none;
+    padding: 18px 6px;
+}
+.menu a{
+    text-decoration: none;
+    font-family: Arial,'San serif';
+    text-transform: uppercase;
+    color: #1A2E35;
 }
 .header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+    background-color: #1A2E35;
+    height: 190px;
+}
+.header img{
+    margin-bottom: -5px;
+    width: 300px;
+    border-radius: 0 0 0 38px;
+    float: right;
 }
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
+}
+.content table{
+    border: 1px solid black;
+}
+.content table th {
+    background-color: #1A2E35;
+    color: white;
+    padding: 3px 4px;
+}
+.content table td{
+    padding: 3px 4px;
+    border: 1px solid black;
 }
 .footer {
     background-color: rgb(99, 56, 240);
